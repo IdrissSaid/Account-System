@@ -31,7 +31,7 @@ jobs:
     - name: Compil cobol
       run: |
         sudo apt-get install -y gnucobol
-        cobc -x main.cob operations.cob data.cob -o accountsystem
+        cobc -x cobol/main.cob cobol/operations.cob cobol/data.cob -o accountsystem
     - name: Test with pytest
       run: |
         conda install pytest
