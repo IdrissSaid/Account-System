@@ -9,7 +9,6 @@ dependencies:
   - pytest        # Pour les tests unitaires
   - pytest-cov    # Pour la couverture de code
   - pip:
-    - gnucobolides # Interface Python pour GnuCOBOL (si disponible)
     - black        # Pour le formatage du code
     - pylint       # Pour l'analyse statique du code
 
