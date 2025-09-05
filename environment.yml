@@ -1,0 +1,17 @@
+name: cobol-to-python-migration
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10  # Pour supporter le match-case introduit dans Python 3.10
+  - pip
+  - numpy         # Utile pour les calculs numériques précis
+  - pytest        # Pour les tests unitaires
+  - pytest-cov    # Pour la couverture de code
+  - pip:
+    - gnucobolides # Interface Python pour GnuCOBOL (si disponible)
+    - black        # Pour le formatage du code
+    - pylint       # Pour l'analyse statique du code
+
+variables:
+  ACCOUNT_DATA_FILE: account_data.json
