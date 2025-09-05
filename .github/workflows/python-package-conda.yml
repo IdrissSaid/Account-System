@@ -30,6 +30,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Compil cobol
       run: |
+        sudo apt-get install -y gnucobol
         cobc -x main.cob operations.cob data.cob -o accountsystem
     - name: Test with pytest
       run: |
