@@ -14,7 +14,7 @@ class AccountManager:
                     return data.get('balance', 1000.0)
             except (json.JSONDecodeError, IOError):
                 pass
-        return 1000.0  # Default initial balance
+        return 1000.0
     
     def _save_balance(self):
         try:
